@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+	<title>SIgnup</title>
+<script>
+	
+function save() {
+	var fieldValue = document.getElementById('field_email').value;
+	localStorage.setItem('email',fieldValue);
+
+	var fieldValue = document.getElementById('field_pass').value;
+	localStorage.setItem('password',fieldValue);
+
+	var fieldValue = document.getElementById('field_name').value;
+	localStorage.setItem('name',fieldValue);
+
+	var fieldValue = document.getElementById('field_last').value;
+	localStorage.setItem('last',fieldValue);
+
+	var fieldValue = document.getElementById('field_number').value;
+	localStorage.setItem('number',fieldValue);
+
+	var fieldValue = document.getElementById('field_date').value;
+	localStorage.setItem('date',fieldValue);
+
+	var fieldValue = document.getElementById('field_gender','field_sex').value;
+	localStorage.setItem('radio',fieldValue);
+
+
+
+
+
+
+}
+
+</script>
+
+</head>
+<body bgcolor="yellow">
+
+<input type="email" id="field_email" placeholder="type your email" style="width:200px; /">
+  <br/> <h1 style='color:blue;'>your email is: <span id='input_email'></span><br/></h1> 
+
+  <div class="form-group">
+        
+      
+          <input type="password" class="form-control" id="field_pass" placeholder="Password" style="width:200px;">
+            <h1 style='color:blue;'>your password is: <span id='input_pass'></span><br/></h1>
+      </div>
+    </div>
+
+    
+    <div class="form-group">
+     
+        <input type="name" class="form-control" id="field_name" placeholder="First Name" style="width:200px;">
+         <h1 style='color:blue;'>your name: <span id='input_name'></span><br/></h1> 
+      </div>
+    </div>
+    <div class="form-group">
+     
+        <input type="last" class="form-control" id="field_last" placeholder="Last Name" style="width:200px;">
+         <h1 style='color:blue;'>Last Name: <span id='input_last'></span><br/></h1> 
+      </div>
+    </div>
+    <div class="form-group">
+     
+        <input type="number" class="form-control" id="field_number" placeholder="Phone Number" style="width:200px;">
+         <h1 style='color:blue;'>Contact number: <span id='input_number'></span><br/></h1> 
+      </div>
+    </div>
+
+     <div class="form-group">
+      
+        <input type="date" class="form-control" id="field_date" placeholder="birthdate" style="width:200px;"">
+        <h1 style='color:blue;'>Birthdate: <span id='input_date'></span><br/></h1> 
+      </div>
+    </div>
+
+
+
+                  <div class="form-group">
+      <div class="col-xs-offset-3 col-xs-9">
+        <label class="checkbox-inline">
+                    <input type="checkbox" value="news"> Send me latest news and updates.
+                </label>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-xs-offset-3 col-xs-9">
+        <label class="checkbox-inline">
+                    <input type="checkbox" value="agree">  I agree to the <a href="#">Terms and Conditions</a>.
+                </label>
+      </div>
+    </div>
+
+
+<br/>
+<input type="button" value="save" onclick="save()" />
+   <a href="gret.html"><h1>FINISH</h1></a></li>
+
+  <script src='ej.js'></script>
+  <script src='gret.html'></script>
+
+	</body>
+
+</html>
+
